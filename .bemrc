@@ -1,0 +1,9 @@
+{
+    "root": true,
+    "levels": {
+        "src/components": {
+            "scheme": "nested",
+            "default": true
+        }
+    }
+}
