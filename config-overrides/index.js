@@ -41,7 +41,7 @@ module.exports = {
   jest: function (config) {
     Object.keys(config.transform).forEach((key) => {
       if (config.transform[key].endsWith('babelTransform.js')) {
-        config.transform[key] = path.resolve('./jest-babel-transform.js')
+        config.transform[key] = path.resolve(__dirname + '/jest-babel-transform.js')
       }
     })
     return config
